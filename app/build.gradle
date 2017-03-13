@@ -4,6 +4,8 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
+
+
     defaultConfig {
         applicationId "news.agoda.com.technewssample"
         minSdkVersion 21
@@ -11,6 +13,9 @@ android {
         versionCode 1
         versionName "1.0.0"
     }
+
+
+
     buildTypes {
         release {
             minifyEnabled false
@@ -20,8 +25,13 @@ android {
 }
 
 dependencies {
-    compile 'com.google.code.gson:gson:2.6.2'
-    compile 'com.facebook.fresco:fresco:0.10.0'
+    //compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //compile 'com.facebook.fresco:fresco:0.10.0'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //compile 'com.android.support:customtabs:23.3.0'
 
     testCompile 'junit:junit:4.12'
 }
